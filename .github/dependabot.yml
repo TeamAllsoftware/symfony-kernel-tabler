@@ -3,7 +3,7 @@ updates:
 - package-ecosystem: composer
   directory: "/"
   schedule:
-    timezone: "France/Paris"
+    timezone: "Europe/Paris"
     interval: monthly
     day: monday
     time: "09:00"
