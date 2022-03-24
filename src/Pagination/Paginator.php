@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Pagination;
+namespace Allsofware\SymfonyKernelTabler\Pagination;
 
 use Doctrine\ORM\QueryBuilder as DoctrineQueryBuilder;
 use Doctrine\ORM\Tools\Pagination\CountWalker;

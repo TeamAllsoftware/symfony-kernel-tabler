@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Command\User;
+namespace Allsofware\SymfonyKernelTabler\Command\User;
 
-use App\Command\BaseCommand;
-use App\Service\UserService;
-use App\Utils\UserValidator;
+use Allsofware\SymfonyKernelTabler\Command\BaseCommand;
+use Allsofware\SymfonyKernelTabler\Service\UserService;
+use Allsofware\SymfonyKernelTabler\Utils\UserValidator;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;

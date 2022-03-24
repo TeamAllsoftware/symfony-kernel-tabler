@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Command;
+namespace Allsofware\SymfonyKernelTabler\Command;
 
 
 use Symfony\Component\Console\Command\Command;

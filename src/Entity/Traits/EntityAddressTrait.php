@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Entity\Traits;
+namespace Allsofware\SymfonyKernelTabler\Entity\Traits;
 
-use App\Attribute\QuillMention;
+use Allsofware\SymfonyKernelTabler\Attribute\QuillMention;
 use Doctrine\ORM\Mapping as ORM;
 
 trait EntityAddressTrait

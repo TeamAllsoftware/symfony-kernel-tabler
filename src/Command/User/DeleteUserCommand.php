@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Command\User;
+namespace Allsofware\SymfonyKernelTabler\Command\User;
 
-use App\Command\BaseCommand;
-use App\Entity\User;
-use App\Repository\UserRepository;
-use App\Utils\UserValidator;
+use Allsofware\SymfonyKernelTabler\Command\BaseCommand;
+use Allsofware\SymfonyKernelTabler\Entity\User;
+use Allsofware\SymfonyKernelTabler\Repository\UserRepository;
+use Allsofware\SymfonyKernelTabler\Utils\UserValidator;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Exception\RuntimeException;

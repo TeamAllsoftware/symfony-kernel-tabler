@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Entity\Traits;
+namespace Allsofware\SymfonyKernelTabler\Entity\Traits;
 
 use DateTime;
 use Doctrine\ORM\Mapping as ORM;

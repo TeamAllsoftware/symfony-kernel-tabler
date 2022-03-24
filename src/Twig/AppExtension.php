@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Twig;
+namespace Allsofware\SymfonyKernelTabler\Twig;
 
 use Symfony\Component\Intl\Locales;
 use Twig\Extension\AbstractExtension;

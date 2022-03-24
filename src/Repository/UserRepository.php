@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Repository;
+namespace Allsofware\SymfonyKernelTabler\Repository;
 
-use App\Entity\User;
-use App\Pagination\Paginator;
+use Allsofware\SymfonyKernelTabler\Entity\User;
+use Allsofware\SymfonyKernelTabler\Pagination\Paginator;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\ORM\QueryBuilder;
 use Doctrine\Persistence\ManagerRegistry;
