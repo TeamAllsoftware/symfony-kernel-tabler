@@ -1,0 +1,40 @@
+{
+    "name": "allsoftware/symfony-kernel-tabler",
+    "description": "Base 'kernel' bundle to be used for re-used functionality in symfony with Tabler",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Florian CAVASIN"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.0",
+        "symfony/asset": "^5.0",
+        "symfony/config": "^5.0",
+        "symfony/dependency-injection": "^5.0",
+        "symfony/event-dispatcher": "^5.0",
+        "symfony/http-foundation": "^5.0",
+        "symfony/http-kernel": "^5.0",
+        "symfony/options-resolver": "^5.0",
+        "symfony/security-core": "^5.0",
+        "symfony/translation": "^5.0",
+        "symfony/twig-bridge": "^5.0",
+        "twig/twig": "^3.0"
+    },
+    "require-dev": {
+        "phpspec/prophecy": "^1.6",
+        "symfony/framework-bundle" : "^5.0",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpunit/phpunit": "^8.0",
+        "phpstan/phpstan": "^1.0",
+        "phpstan/phpstan-phpunit": "^1.0",
+        "phpstan/phpstan-symfony": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Allsoftware\\SymfonyKernelTabler\\": "src/"
+        }
+    }
+}
