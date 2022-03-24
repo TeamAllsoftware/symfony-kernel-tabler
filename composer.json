@@ -28,7 +28,7 @@
         "symfony/intl": "5.*",
         "symfony/mailer": "5.*",
         "symfony/options-resolver": "5.*",
-        "symfony/property-access": "5.*",
+        "symfony/property-access": "6.*",
         "symfony/security-core": "5.*",
         "symfony/translation": "5.*",
         "symfony/twig-bridge": "5.*",
