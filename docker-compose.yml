@@ -1,0 +1,12 @@
+version: '3'
+services:
+    apache:
+        image: allsoftware/symfony:5-php-8.0-v5
+        volumes:
+            - "./docker.php.settings.ini:/usr/local/etc/php/conf.d/docker.php.settings.ini"
+            - "./:/var/www/html"
+        ports:
+            - "${userPrefixPort}80:80"
+        environment:
+            - xdebugRemoteMachine
+            - userPrefixPort
