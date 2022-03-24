@@ -8,9 +8,11 @@
             "name": "Florian CAVASIN"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "php": "^8.0",
+        "doctrine/annotations": "^1.0",
+        "doctrine/doctrine-bundle": "^2.5",
         "symfony/asset": "^5.0",
         "symfony/config": "^5.0",
         "symfony/dependency-injection": "^5.0",
@@ -21,16 +23,18 @@
         "symfony/security-core": "^5.0",
         "symfony/translation": "^5.0",
         "symfony/twig-bridge": "^5.0",
-        "twig/twig": "^3.0"
+        "twig/twig": "^3.0",
+        "symfony/intl": "^5.0",
+        "doctrine/orm": "2.*",
+        "symfony/mailer": "5.*",
+        "symfony/property-access": "5.*",
+        "ramsey/uuid-doctrine": "^1.8",
+        "kevinpapst/tabler-bundle": "^0.2.0",
+        "symfony/validator": "5.*"
     },
     "require-dev": {
         "phpspec/prophecy": "^1.6",
-        "symfony/framework-bundle" : "^5.0",
-        "friendsofphp/php-cs-fixer": "^3.0",
-        "phpunit/phpunit": "^8.0",
-        "phpstan/phpstan": "^1.0",
-        "phpstan/phpstan-phpunit": "^1.0",
-        "phpstan/phpstan-symfony": "^1.0"
+        "symfony/framework-bundle" : "^5.0"
     },
     "autoload": {
         "psr-4": {
