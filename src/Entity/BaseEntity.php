@@ -11,7 +11,7 @@ use Symfony\Component\PropertyAccess\PropertyAccess;
 
 /**
  * @ORM\MappedSuperclass
- * @package App\Entity
+ * @package Allsoftware\SymfonyKernelTabler\Entity
  */
 abstract class BaseEntity
 {

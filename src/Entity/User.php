@@ -11,7 +11,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
+ * @ORM\Entity(repositoryClass="Allsoftware\SymfonyKernelTabler\Repository\UserRepository")
  * @ORM\Table(name="user")
  */
 class User extends BaseEntity implements UserInterface, PasswordAuthenticatedUserInterface
