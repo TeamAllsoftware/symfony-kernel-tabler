@@ -1,6 +1,6 @@
 <?php
 
-namespace Allsofware\SymfonyKernelTabler\Entity\Traits;
+namespace Allsoftware\SymfonyKernelTabler\Entity\Traits;
 
 use Doctrine\ORM\Mapping as ORM;
 

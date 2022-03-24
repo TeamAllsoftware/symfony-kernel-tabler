@@ -1,10 +1,10 @@
 <?php
 
-namespace Allsofware\SymfonyKernelTabler\Service;
+namespace Allsoftware\SymfonyKernelTabler\Service;
 
-use Allsofware\SymfonyKernelTabler\Entity\User;
-use Allsofware\SymfonyKernelTabler\Repository\UserRepository;
-use Allsofware\SymfonyKernelTabler\Utils\UserValidator;
+use Allsoftware\SymfonyKernelTabler\Entity\User;
+use Allsoftware\SymfonyKernelTabler\Repository\UserRepository;
+use Allsoftware\SymfonyKernelTabler\Utils\UserValidator;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Console\Exception\RuntimeException;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;

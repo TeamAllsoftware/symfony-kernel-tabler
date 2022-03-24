@@ -1,6 +1,6 @@
 {
     "name": "allsoftware/symfony-kernel-tabler",
-    "description": "Base 'kernel' bundle to be used for re-used functionality in symfony with Tabler",
+    "description": "Base 'kernel' bundle to be used for re-used functionality in symfony with Tabler.io",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [

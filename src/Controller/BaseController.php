@@ -1,8 +1,8 @@
 <?php
 
-namespace Allsofware\SymfonyKernelTabler\Controller;
+namespace Allsoftware\SymfonyKernelTabler\Controller;
 
-use Allsofware\SymfonyKernelTabler\Entity\User;
+use Allsoftware\SymfonyKernelTabler\Entity\User;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;

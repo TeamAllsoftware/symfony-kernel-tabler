@@ -1,6 +1,6 @@
 <?php
 
-namespace Allsofware\SymfonyKernelTabler\Repository;
+namespace Allsoftware\SymfonyKernelTabler\Repository;
 
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 

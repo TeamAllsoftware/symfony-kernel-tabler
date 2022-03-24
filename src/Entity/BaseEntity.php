@@ -1,10 +1,10 @@
 <?php
 
-namespace Allsofware\SymfonyKernelTabler\Entity;
+namespace Allsoftware\SymfonyKernelTabler\Entity;
 
-use Allsofware\SymfonyKernelTabler\Entity\Traits\EntityCosuTrait;
-use Allsofware\SymfonyKernelTabler\Entity\Traits\EntityDataLifeTrait;
-use Allsofware\SymfonyKernelTabler\Entity\Traits\EntityUuidTrait;
+use Allsoftware\SymfonyKernelTabler\Entity\Traits\EntityCosuTrait;
+use Allsoftware\SymfonyKernelTabler\Entity\Traits\EntityDataLifeTrait;
+use Allsoftware\SymfonyKernelTabler\Entity\Traits\EntityUuidTrait;
 use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\PropertyAccess\PropertyAccess;

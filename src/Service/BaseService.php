@@ -1,6 +1,6 @@
 <?php
 
-namespace Allsofware\SymfonyKernelTabler\Service;
+namespace Allsoftware\SymfonyKernelTabler\Service;
 
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Security\Core\Security;

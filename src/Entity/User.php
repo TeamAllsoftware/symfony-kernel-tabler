@@ -1,11 +1,11 @@
 <?php
 
-namespace Allsofware\SymfonyKernelTabler\Entity;
+namespace Allsoftware\SymfonyKernelTabler\Entity;
 
-use Allsofware\SymfonyKernelTabler\Attribute\QuillMention;
-use Allsofware\SymfonyKernelTabler\Entity\Traits\EntityRolesTrait;
+use Allsoftware\SymfonyKernelTabler\Attribute\QuillMention;
+use Allsoftware\SymfonyKernelTabler\Entity\Traits\EntityRolesTrait;
 use Doctrine\ORM\Mapping as ORM;
-use Allsofware\SymfonyKernelTabler\Model\UserInterface as TablerUserInterface;
+use Allsoftware\SymfonyKernelTabler\Model\UserInterface as TablerUserInterface;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Allsofware\SymfonyKernelTabler\Utils;
+namespace Allsoftware\SymfonyKernelTabler\Utils;
 
 class MomentFormatConverter
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Allsofware\SymfonyKernelTabler;
+namespace Allsoftware\SymfonyKernelTabler;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
