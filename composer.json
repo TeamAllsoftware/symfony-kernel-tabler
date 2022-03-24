@@ -30,7 +30,7 @@
         "symfony/property-access": "5.*",
         "ramsey/uuid-doctrine": "^1.8",
         "kevinpapst/tabler-bundle": "^0.2.0",
-        "symfony/validator": "5.*"
+        "symfony/validator": "6.*"
     },
     "require-dev": {
         "phpspec/prophecy": "^1.6",
