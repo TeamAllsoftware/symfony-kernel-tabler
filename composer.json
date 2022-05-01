@@ -24,7 +24,7 @@
         "symfony/dependency-injection": "5.*",
         "symfony/event-dispatcher": "5.*",
         "symfony/http-foundation": "5.*",
-        "symfony/http-kernel": "5.*",
+        "symfony/http-kernel": "6.*",
         "symfony/intl": "5.*",
         "symfony/mailer": "5.*",
         "symfony/options-resolver": "5.*",
