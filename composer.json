@@ -27,7 +27,7 @@
         "symfony/http-kernel": "5.*",
         "symfony/intl": "5.*",
         "symfony/mailer": "5.*",
-        "symfony/options-resolver": "5.*",
+        "symfony/options-resolver": "6.*",
         "symfony/property-access": "5.*",
         "symfony/security-core": "5.*",
         "symfony/translation": "5.*",
