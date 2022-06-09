@@ -1,1 +1,1 @@
-# symfony-tabler
+# symfony-kernel-tabler

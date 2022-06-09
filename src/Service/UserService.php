@@ -48,7 +48,6 @@ class UserService
 
     public function deleteUser(User $user, bool $auto_flush = true)
     {
-        $user->setInterlocuteur(null);
         $this->entityManager->remove($user);
         if ($auto_flush) $this->entityManager->flush();
     }

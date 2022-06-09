@@ -1,0 +1,4 @@
+.github export-ignore
+.gitignore export-ignore
+docker.php.settings.ini export-ignore
+docker-compose.yml export-ignore

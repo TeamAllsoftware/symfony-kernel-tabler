@@ -14,7 +14,9 @@ class UserValidator
         }
 
         if (1 !== preg_match('/^[a-z_]+$/', $username)) {
-            throw new InvalidArgumentException('The username must contain only lowercase latin characters and underscores.');
+            throw new InvalidArgumentException(
+                'The username must contain only lowercase latin characters and underscores.'
+            );
         }
 
         return $username;

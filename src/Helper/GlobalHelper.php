@@ -11,8 +11,8 @@ class GlobalHelper
     const CST_Date_Format_Fr = "d/m/Y";
     const CST_Date_Format_En = "m/d/Y";
 
-    const CST_DateTime_Format_Fr = "d/m/Y H:i:s";
-    const CST_DateTime_Format_En = "m/d/Y H:i:s";
+    const CST_DateTime_Format_Fr = self::CST_Date_Format_Fr . " " . self::CST_Time_Format;
+    const CST_DateTime_Format_En = self::CST_Date_Format_En . " " . self::CST_Time_Format;
 
     const CST_Time_Format = "H:i:s";
 
@@ -25,19 +25,20 @@ class GlobalHelper
 
         $string_dateTimes_fr = explode(' - ', $dateRangeFormData);
 
-        $min = new DateTime();$max = new DateTime();
+        $min = new DateTime();
+        $max = new DateTime();
 
         foreach ($string_dateTimes_fr as $index => $string_dateTime_fr) {
             $dateTime_en = self::str_toDateTime($string_dateTime_fr);
             if ($index === 0) {
                 $min = $dateTime_en;
             } else {
-                $time = $dateTime_en->format(self::CST_Time_Format);
+                $time    = $dateTime_en->format(self::CST_Time_Format);
                 $hasTime = false;
-                foreach (explode(':',$time) as $int){
+                foreach (explode(':', $time) as $int) {
                     if (intval($int) > 0) $hasTime = true;
                 }
-                if (!$hasTime){
+                if (!$hasTime) {
                     $max = $dateTime_en->add(new \DateInterval('PT23H59M59S'));
                 } else {
                     $max = $dateTime_en;
@@ -64,7 +65,7 @@ class GlobalHelper
         $string_date = $explode_dateTime[0];
         $string_time = $explode_dateTime[1] ?? '00:00:00';
 
-        return DateTime::createFromFormat($format, $string_date.' '.$string_time);
+        return DateTime::createFromFormat($format, $string_date . ' ' . $string_time);
     }
 
     public static function percent_add(float|int $percent, float|int $from): float|int
@@ -84,7 +85,11 @@ class GlobalHelper
 
     public static function str_stripAccents(string $str): string
     {
-        return strtr(utf8_decode($str), utf8_decode('àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ'), 'aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');
+        return strtr(
+            utf8_decode($str),
+            utf8_decode('àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ'),
+            'aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY'
+        );
     }
 
     /**
@@ -117,8 +122,9 @@ class GlobalHelper
         return self::camelCase_To($str, '-');
     }
 
-    private static function camelCase_To(string $str, string $replacement){
-        return ltrim(strtolower(preg_replace('/[A-Z]([A-Z](?![a-z]))*/', $replacement.'$0', $str)), $replacement);
+    private static function camelCase_To(string $str, string $replacement)
+    {
+        return ltrim(strtolower(preg_replace('/[A-Z]([A-Z](?![a-z]))*/', $replacement . '$0', $str)), $replacement);
     }
 
 
@@ -139,7 +145,7 @@ class GlobalHelper
     public static function array_mergeRecursiveOverride(array ...$arrays): array
     {
         $last_merged = [];
-        foreach ($arrays as $index => $array){
+        foreach ($arrays as $index => $array) {
             if ($index === 0) {
                 $last_merged = $array;
                 continue;
@@ -155,14 +161,10 @@ class GlobalHelper
     {
         $merged = $array1;
 
-        foreach ($array2 as $key => $value)
-        {
-            if ( is_array ( $value ) && isset ( $merged [$key] ) && is_array ( $merged [$key] ) )
-            {
-                $merged [$key] = self::_array_mergeRecursiveOverrideDouble ( $merged [$key], $value );
-            }
-            else
-            {
+        foreach ($array2 as $key => $value) {
+            if (is_array($value) && isset ($merged [$key]) && is_array($merged [$key])) {
+                $merged [$key] = self::_array_mergeRecursiveOverrideDouble($merged [$key], $value);
+            } else {
                 $merged [$key] = $value;
             }
         }
@@ -170,9 +172,10 @@ class GlobalHelper
         return $merged;
     }
 
-    public static function array_findKeyFromValue(array $array, $value) : string|int|null
+    public static function array_findKeyFromValue(array $array, $value): string|int|null
     {
         $key = array_search($value, $array);
+
         return $key !== false ? $key : null;
     }
 }

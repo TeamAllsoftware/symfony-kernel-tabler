@@ -1,0 +1,6 @@
+services:
+
+    console.command.app.user.promote:
+        class: Allsoftware\SymfonyKernelTabler\Command\User\PromoteUserCommand
+        tags:
+            - { name: 'console.command', command: 'app:user:promote' }
