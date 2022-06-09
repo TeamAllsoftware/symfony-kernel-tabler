@@ -19,7 +19,7 @@
         "doctrine/orm": "2.*",
         "kevinpapst/tabler-bundle": "^0.3",
         "ramsey/uuid-doctrine": "^1.8",
-        "symfony/asset": "5.*",
+        "symfony/asset": "6.*",
         "symfony/config": "5.*",
         "symfony/dependency-injection": "5.*",
         "symfony/event-dispatcher": "5.*",
