@@ -23,6 +23,7 @@
         "symfony/config": "5.*",
         "symfony/dependency-injection": "5.*",
         "symfony/event-dispatcher": "5.*",
+        "symfony/form": "5.*",
         "symfony/http-foundation": "5.*",
         "symfony/http-kernel": "5.*",
         "symfony/intl": "5.*",
@@ -32,8 +33,9 @@
         "symfony/security-core": "5.*",
         "symfony/translation": "5.*",
         "symfony/twig-bridge": "5.*",
-        "symfony/validator": "5.*",
-        "twig/twig": "^3.0"
+        "symfony/validator": "6.*",
+        "twig/twig": "^3.0",
+        "ext-gmp": "*"
     },
     "require-dev": {
         "phpspec/prophecy": "^1.6",
