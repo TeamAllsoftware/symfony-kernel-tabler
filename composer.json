@@ -33,7 +33,7 @@
         "symfony/security-core": "5.*",
         "symfony/translation": "5.*",
         "symfony/twig-bridge": "5.*",
-        "symfony/validator": "5.*",
+        "symfony/validator": "6.*",
         "twig/twig": "^3.0",
         "ext-gmp": "*"
     },
