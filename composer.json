@@ -17,7 +17,7 @@
         "doctrine/annotations": "^1.0",
         "doctrine/doctrine-bundle": "^2.5",
         "doctrine/orm": "2.*",
-        "kevinpapst/tabler-bundle": "^0.3",
+        "kevinpapst/tabler-bundle": "^0.9",
         "ramsey/uuid-doctrine": "^1.8",
         "symfony/asset": "5.*",
         "symfony/config": "5.*",
